@@ -1,5 +1,8 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, OPTIONS"); // Adjust methods as needed
+header("Access-Control-Allow-Headers: *"); // Adjust headers as needed
+header("Content-Type: application/json");
 $superheroes = [
   [
       "id" => 1,

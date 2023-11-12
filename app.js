@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     let searchButton = $("#search-button");
+    let message = $("#message");
 
     $(searchButton).click(function() {
         const httpRequest = new XMLHttpRequest();
@@ -10,7 +11,7 @@ $( document ).ready(function() {
             if (httpRequest.readyState === XMLHttpRequest.DONE) {
                 if (httpRequest.status === 200) {
                     let response = httpRequest.responseText;
-                    alert(response);
+                    alert(response)
                 } else {
                     alert('There was a problem with the request.');
                 }

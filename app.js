@@ -11,7 +11,7 @@ $( document ).ready(function() {
             if (httpRequest.readyState === XMLHttpRequest.DONE) {
                 if (httpRequest.status === 200) {
                     let response = httpRequest.responseText;
-                    alert(response)
+                    message.html(response);
                 } else {
                     alert('There was a problem with the request.');
                 }

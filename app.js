@@ -50,12 +50,12 @@ $(document).ready(function () {
                                     <h4>${hero['name']}</h4>
                                     <p>${hero['biography']}</p>
                                 `;
+                                message.removeClass("not-found")
                                 message.html(result);
                                 break;
                             } else {
                                 message.addClass("not-found")
                                 message.html("SUPERHERO NOT FOUND");
-                                break;
                             }
                         }
                     } else {

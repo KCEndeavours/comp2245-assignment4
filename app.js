@@ -53,6 +53,7 @@ $(document).ready(function () {
                                 message.html(result);
                                 break;
                             } else {
+                                message.addClass("not-found")
                                 message.html("SUPERHERO NOT FOUND");
                                 break;
                             }

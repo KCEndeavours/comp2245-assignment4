@@ -43,17 +43,17 @@ $(document).ready(function () {
 
                     if (cleanInput.length > 0) {
                         for (let hero of response) {
-                            const decodedAlias = decodeURIComponent(cleanInput);
-                            const decodedName = decodeURIComponent(cleanInput);
-                            console.log(decodedAlias);
-                            console.log(decodedName);
-                            if (decodedAlias == hero['alias'] || decodedName == hero['name']) {
+                            const decodedInput = decodeURIComponent(cleanInput);
+                            if (decodedInput == hero['alias'] || decodedInput == hero['name']) {
                                 const result = `
                                     <h3>${hero['alias']}</h3>
                                     <h4>${hero['name']}</h4>
                                     <p>${hero['biography']}</p>
                                 `;
                                 message.html(result);
+                                break;
+                            } else {
+                                message.html("SUPERHERO NOT FOUND");
                                 break;
                             }
                         }

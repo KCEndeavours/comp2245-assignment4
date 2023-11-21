@@ -11,13 +11,13 @@ $(document).ready(function () {
         let httpRequest;
 
         if (cleanInput.length == 0) {
-            url = "http://localhost:8888/comp2245-assignment4/superheroes.php";
+            url = "http://localhost/comp2245-assignment4/superheroes.php";
             httpRequest = new XMLHttpRequest();
             httpRequest.onreadystatechange = handleEmptyInput;
             httpRequest.open('GET', url);
             httpRequest.send();
         } else {
-            url = `http://localhost:8888/comp2245-assignment4/superheroes.php?query=${cleanInput}`;
+            url = `http://localhost/comp2245-assignment4/superheroes.php?query=${cleanInput}`;
             httpRequest = new XMLHttpRequest();
             httpRequest.onreadystatechange = doSomething;
             httpRequest.open('GET', url);

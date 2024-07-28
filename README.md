@@ -1,2 +1,2 @@
 # COMP2245 Assignment 4
-This is Assignment 4 for Kadeem Charles
+A superhero bio page with search functionality to solidify our learning from HTML to PHP. 
